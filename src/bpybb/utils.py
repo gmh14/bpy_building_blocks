@@ -96,6 +96,14 @@ def purge_orphans():
         result = bpy.ops.outliner.orphans_purge()
         if result.pop() != "CANCELLED":
             purge_orphans()
+            
+            
+def reset():
+    """
+    reset: clean the scene and remove libraries
+    """
+    clean_scene()
+    remove_libraries()
 
 
 def clean_scene():
