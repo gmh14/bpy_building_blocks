@@ -5,3 +5,5 @@ Important: This package assumes you are using [Blender's](https://www.blender.or
 """
 
 from .version import __version__
+from . import utils
+from . import IO_obj
